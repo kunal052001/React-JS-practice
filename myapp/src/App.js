@@ -1,12 +1,14 @@
 import React from 'react'
-import Button from './componets/Button.js'
+import Api from './componets/Api'
+// import Button from './componets/Button.js'
 
 export default function kunal() {
   return (
     
     <>
-    <div>hay this is kunal</div>
-      <Button/>
+    
+      {/* <Button/> */}
+      <Api></Api>
     </>
    
   )

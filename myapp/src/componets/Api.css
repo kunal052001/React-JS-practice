@@ -1,0 +1,22 @@
+.field{
+    width: 100wh;
+    height: 100vh;    
+   
+}
+.area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.card{
+   height: 350px;
+   width: 250px;
+   border: 2px solid black;
+   justify-content: center;
+   padding: 5px;
+}
+.card img{
+    height: 100px;
+    width: 100 px;
+}
