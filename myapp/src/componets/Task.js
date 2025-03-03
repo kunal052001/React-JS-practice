@@ -1,28 +1,33 @@
-import React, { useState } from 'react'
+import { useState } from "react"
+import React from 'react'
 
-export const Todo = () => {
+function Task(){
     const [state,setState]=useState(" ")
     const [todo,setTodo]=useState([])
+    const [placeholder,setPlaceholder]=useState("")
 
     function additon(){
          const val=[...todo,state]
          setTodo(val)
+         setState('')
     }
     function deleta(inj){
         const newtodo=[...todo]
         newtodo.splice(inj,1)
         setTodo(newtodo)
     }
+    
     function update(inj){
+       
         const unewtodo=[...todo]
-        document.getElementById("v").Placeholder=state[inj]
+        setPlaceholder("write some text here to update")
         unewtodo[inj]=state
         setTodo(unewtodo)
     }
   return (
     <div>Todo
            <input 
-           id='v'
+           placeholder={placeholder}
            value={state}
            onChange={(e)=>setState(e.target.value)}
            type='text'/>
@@ -39,3 +44,8 @@ export const Todo = () => {
 
   )
 }
+
+
+
+
+export default Task

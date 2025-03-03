@@ -1,5 +1,9 @@
 import React from 'react'
-import Search from './componets/Search'
+import Task from './componets/Task'
+// import Todo  from './components/Todo';
+
+// import Fetcha from './componets/Fetcha'
+// import Search from './componets/Search'
 // import Forma from './componets/Forma'
 // import Pr from './componets/Pr'
 // import { Todo } from './componets/Todo.js'
@@ -16,7 +20,9 @@ export default function kunal() {
     
 
     <>
-       <Search/>
+        <Task/>
+            {/* <Fetcha/> */}
+       {/* <Search/> */}
       {/* <Forma/>
      <h1> hay this is kunal</h1> */}
       {/* <Button/> */}
@@ -25,7 +31,7 @@ export default function kunal() {
       {/* <Paggination/> */}
       {/* <Calci/> */}
       {/* <Pr/> */}
-      {/* <Todo/> */}
+      
     </>
    
   )
